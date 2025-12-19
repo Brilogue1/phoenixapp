@@ -474,7 +474,7 @@ Use the preconfigured image generation helper that connects to the internal Imag
 
 Example usage:
 ```ts
-import { generateImage } from "./server/_core/imageGeneration.ts";
+import { generateImage } from "./server/_core/imageGeneration";
 
 const { url: imageUrl } = await generateImage({
   prompt: "A serene landscape with mountains"
