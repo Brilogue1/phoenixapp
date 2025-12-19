@@ -1,0 +1,5 @@
+{
+  "installCommand": "echo 'Skipping install - using pre-built dist-web'",
+  "buildCommand": "echo 'Using pre-built dist-web folder'",
+  "outputDirectory": "dist-web"
+}
