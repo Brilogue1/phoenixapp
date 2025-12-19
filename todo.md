@@ -322,3 +322,34 @@
 - [x] Fix esbuild configuration
 - [ ] Push fix to GitHub
 - [ ] Redeploy on Railway
+
+
+## Login System Bug Fix
+- [x] Fix auth.ts to read from "Logins" tab instead of "Sheet2"
+- [x] Add console logging to debug login validation
+- [ ] Test login with bri@investorplug.io and password Phoenix123!
+- [ ] Verify role-based access control works after login
+
+
+## Role-Based Access Control Update
+- [x] Create role-utils.ts helper functions for role checking
+- [x] Update role checking to treat VO, Owner, CEO, COO, Director as full access roles
+- [x] Update UserProfileSelector to show all profiles for executive roles
+- [x] Update home screen profile selector visibility for executive roles
+- [x] Update sales.tsx to use role-utils
+- [ ] Test with different executive role titles
+
+
+## React Hooks Error Fix
+- [x] Fix "Rendered more hooks than during the previous render" error in TabLayout
+- [x] Moved useColorScheme and useSafeAreaInsets to top of component
+- [x] Ensure all hooks are called in the same order every render (before any returns)
+
+
+## Missing Icons Fix
+- [x] Add all missing icon mappings to icon-symbol.tsx
+- [x] Create inject-material-icons.js script to add Google Fonts link
+- [x] Update build script to auto-inject Material Icons font
+- [x] Inject Material Icons into all dist-web HTML files
+- [x] Fix tab bar icons (home, survey, calculator, expenses, payroll, sales)
+- [x] Fix navigation arrow icons (chevron left/right)
